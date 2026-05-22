@@ -1,0 +1,57 @@
+# Ignorar archivos y carpetas comunes para proyectos Java/IDE
+
+# Archivos compilados
+*.class
+
+# Paquetes y artefactos
+*.jar
+*.war
+*.ear
+
+# Directorios de build/IDE
+/bin/
+/out/
+/build/
+/target/
+
+# Gradle
+.gradle/
+
+# IntelliJ IDEA
+*.iml
+/.idea/
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+
+# Visual Studio Code
+.vscode/
+
+# Archivos temporales y logs
+*.log
+*.tmp
+*.swp
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Otros
+*.class
+
+# Evitar que se añadan credenciales o configuraciones sensibles
+config/*.properties
+config/*.json
+secrets/
+
+# Si hay carpetas de salida o binarios específicos del proyecto, añadirlos aquí
+# Por ejemplo: /out-production/
+
