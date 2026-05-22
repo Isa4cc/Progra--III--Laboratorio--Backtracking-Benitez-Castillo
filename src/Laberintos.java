@@ -1,8 +1,6 @@
-// ─────────────────────────────────────────────────────
 // Archivo: Laberintos.java
 // Contiene todos los laberintos del laboratorio.
 // 0 = libre | 1 = pared | 2 = salida
-// ─────────────────────────────────────────────────────
 public class Laberintos {
 
     public static int[][] obtener(int size) {

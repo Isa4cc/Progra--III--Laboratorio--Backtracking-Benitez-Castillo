@@ -1,8 +1,6 @@
-// ─────────────────────────────────────────────────────
 // Archivo: Configuracion.java
 // Centraliza los parámetros de todos los retos.
 // Solo cambia aquí para cambiar el comportamiento.
-// ─────────────────────────────────────────────────────
 public class Configuracion {
 
     // RETO 1 — Tamaño del laberinto

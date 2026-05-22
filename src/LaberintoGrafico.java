@@ -1,11 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 
-// ─────────────────────────────────────────────────────
 // Archivo: LaberintoGrafico.java
 // Clase principal. Extiende JPanel para dibujar.
 // Contiene: main, variables de estado, constructor.
-// ─────────────────────────────────────────────────────
 public class LaberintoGrafico extends JPanel {
 
     // ── RETO 1 — Contadores y tiempo ──
@@ -28,9 +26,7 @@ public class LaberintoGrafico extends JPanel {
 
     int[][] laberinto;
 
-    // ─────────────────────────────────────────────────
     // Constructor
-    // ─────────────────────────────────────────────────
     public LaberintoGrafico() {
         laberinto = Laberintos.obtener(Configuracion.TAMANIO);
         buscarSalida();
@@ -46,9 +42,7 @@ public class LaberintoGrafico extends JPanel {
                 }
     }
 
-    // ─────────────────────────────────────────────────
     // MAIN — punto de entrada
-    // ─────────────────────────────────────────────────
     public static void main(String[] args) {
 
         JFrame ventana = new JFrame("Backtracking - Laberinto");
@@ -83,9 +77,7 @@ public class LaberintoGrafico extends JPanel {
         }).start();
     }
 
-    // ─────────────────────────────────────────────────
     // RETO 4 — Dibuja el tablero y el panel de métricas
-    // ─────────────────────────────────────────────────
     @Override
     protected void paintComponent(Graphics g) {
 

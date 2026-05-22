@@ -1,9 +1,7 @@
-// ─────────────────────────────────────────────────────
 // Archivo: Resolver.java
 // Algoritmo de backtracking principal.
 // Integra: Reto 1 (contadores), Reto 2 (orden),
 //          Reto 4 (profundidad), Reto 5 (heurística)
-// ─────────────────────────────────────────────────────
 public class Resolver {
 
     public static boolean resolver(LaberintoGrafico panel, int fila, int col) {
@@ -71,11 +69,8 @@ public class Resolver {
         return false;
     }
 
-    // ─────────────────────────────────────────────────
     // RETO 2 — Orden de exploración configurable
     // RETO 5 — Heurística distancia Manhattan
-    // ─────────────────────────────────────────────────
-
     private static int[][] obtenerDirecciones(LaberintoGrafico panel, int fila, int col) {
 
         // {deltaFila, deltaCol}
