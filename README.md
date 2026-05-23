@@ -47,7 +47,7 @@ HEURISTICA: Activar optimización con distancia Manhattan (false o true)
 
 ### 1. ¿Por qué algunos laberintos son mucho mas costosos?
 
-El costo depende de la estructura del laberinto y la estrategia de búsqueda. Los laberintos más pequeños como 5x5 tienen menos celdas y típicamente necesitan 15-25 llamadas. Los laberintos más grandes como 20x20 tienen mucha más complejidad y pueden necesitar 800-2000 llamadas o más. 
+El costo depende de la estructura del laberinto y la estrategia de búsqueda. Los laberintos más pequeños como 5x5 tienen menos celdas y típicamente necesitan 15-25 llamadas. Los laberintos más grandes como 20x20 tienen mucha más complejidad y pueden necesitar 60-500 llamadas o más. 
 
 La estructura del laberinto es crucial: laberintos con muchas ramificaciones y callejones ciegos requieren más retrocesos. Si la salida está lejos del inicio, el algoritmo debe explorar más celdas antes de encontrarla. La densidad de paredes también influye: más paredes crean más restricciones, lo que puede reducir el espacio de búsqueda pero también puede bloquear rutas y forzar más exploración.
 
