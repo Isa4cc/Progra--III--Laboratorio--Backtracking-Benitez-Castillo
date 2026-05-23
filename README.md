@@ -45,7 +45,7 @@ HEURISTICA: Activar optimización con distancia Manhattan (false o true)
 
 ## Respuestas a Preguntas de Reflexion
 
-### 1. Por que algunos laberintos son mucho mas costosos?
+### 1. ¿Por qué algunos laberintos son mucho mas costosos?
 
 El costo depende de la estructura del laberinto y la estrategia de búsqueda. Los laberintos más pequeños como 5x5 tienen menos celdas y típicamente necesitan 15-25 llamadas. Los laberintos más grandes como 20x20 tienen mucha más complejidad y pueden necesitar 800-2000 llamadas o más. 
 
@@ -55,7 +55,7 @@ El número de celdas y posibles combinaciones crece cuadráticamente con el tama
 
 ---
 
-### 2. Que provoca explosion combinatoria?
+### 2. ¿Qué provoca explosion combinatoria?
 
 La explosión combinatoria ocurre cuando el algoritmo debe explorar múltiples caminos en cada paso. Cada celda libre puede tener hasta 4 opciones de movimiento: arriba, derecha, abajo e izquierda. Esto crea un árbol de decisión donde cada nivel tiene potencialmente 4 ramas.
 
@@ -65,7 +65,7 @@ Matemáticamente, un laberinto 5x5 con 25 celdas podría generar hasta 100 explo
 
 ---
 
-### 3. Como influye el orden de busqueda?
+### 3. ¿Cómo influye el orden de busqueda?
 
 El orden de exploración afecta significativamente el rendimiento. Con el orden ORIGINAL (arriba-derecha-abajo-izquierda), el algoritmo busca primero hacia arriba lo que causa muchos retrocesos iniciales. Esto es típicamente lento en laberintos con salida a la derecha o abajo.
 
@@ -77,7 +77,7 @@ Elegir el orden correcto puede reducir el tiempo de ejecución de O(4^n) a aprox
 
 ---
 
-### 4. Por que backtracking puede ser exponencial?
+### 4. ¿Por qué backtracking puede ser exponencial?
 
 Backtracking es inherentemente exponencial porque funciona con un árbol de decisión donde en cada paso el algoritmo puede tener hasta 4 ramas (4 direcciones posibles). La profundidad recursiva máxima es n por m, el número total de celdas. En el peor caso, el algoritmo debe explorar todas las combinaciones posibles de movimientos.
 
@@ -87,7 +87,7 @@ En la práctica, las paredes reducen el árbol de búsqueda haciéndolo más man
 
 ---
 
-### 5. Que ocurriria si no marcamos posiciones visitadas?
+### 5. ¿Qué ocurriria si no marcamos posiciones visitadas?
 
 Sin marcar posiciones visitadas, ocurriría un ciclo infinito. El algoritmo revisitaría la misma celda infinitamente. Por ejemplo, las celdas A y B se visitarían mutuamente en un bucle A→B→A→B sin fin. El programa nunca terminaría y eventualmente causaría un error de stack overflow.
 
@@ -97,7 +97,7 @@ Sin este control, las llamadas serían 10,000 o más infinitamente, el tiempo se
 
 ---
 
-### 6. Que pasaria si el laberinto no tiene solucion?
+### 6. ¿Qué pasaria si el laberinto no tiene solucion?
 
 Si no hay solución, el algoritmo explora TODO el laberinto. Intenta cada celda posible antes de concluir que no existe camino hacia la salida. El resultado es que retorna falso después de agotar todas las opciones. El costo es máximo: las llamadas serán aproximadamente igual al número total de celdas del laberinto.
 
