@@ -87,7 +87,7 @@ En la práctica, las paredes reducen el árbol de búsqueda haciéndolo más man
 
 ---
 
-### 5. ¿Qué ocurriria si no marcamos posiciones visitadas?
+### 5. ¿Qué ocurriría si no marcamos posiciones visitadas?
 
 Sin marcar posiciones visitadas, ocurriría un ciclo infinito. El algoritmo revisitaría la misma celda infinitamente. Por ejemplo, las celdas A y B se visitarían mutuamente en un bucle A→B→A→B sin fin. El programa nunca terminaría y eventualmente causaría un error de stack overflow.
 
