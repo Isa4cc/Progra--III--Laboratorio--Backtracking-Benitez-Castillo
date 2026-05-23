@@ -19,7 +19,7 @@ El programa incluye visualización gráfica en tiempo real, métricas de rendimi
 
 ---
 
-## Como Funciona el Repositorio
+## Cómo Funciona el Repositorio
 
 El proyecto implementa un sistema de resolución de laberintos mediante backtracking recursivo. Cuando se ejecuta la aplicación, el programa carga un laberinto según la configuración especificada y comienza a explorar desde la posición inicial (arriba a la izquierda) en busca de la salida (ubicada en la esquina inferior derecha).
 
@@ -31,7 +31,7 @@ El sistema es completamente configurable. Puedes cambiar el tamaño del laberint
 
 ---
 
-## Como Usar el Proyecto
+## Cómo Usar el Proyecto
 
 Cambiar configuración editando los valores en Configuracion.java:
 
@@ -43,9 +43,9 @@ HEURISTICA: Activar optimización con distancia Manhattan (false o true)
 
 ---
 
-## Respuestas a Preguntas de Reflexion
+## Respuestas a Preguntas de Reflexión
 
-### 1. ¿Por qué algunos laberintos son mucho mas costosos?
+### 1. ¿Por qué algunos laberintos son mucho más costosos?
 
 El costo depende de la estructura del laberinto y la estrategia de búsqueda. Los laberintos más pequeños como 5x5 tienen menos celdas y típicamente necesitan 15-25 llamadas. Los laberintos más grandes como 20x20 tienen mucha más complejidad y pueden necesitar 60-500 llamadas o más. 
 
@@ -55,7 +55,7 @@ El número de celdas y posibles combinaciones crece cuadráticamente con el tama
 
 ---
 
-### 2. ¿Qué provoca explosion combinatoria?
+### 2. ¿Qué provoca explosión combinatoria?
 
 La explosión combinatoria ocurre cuando el algoritmo debe explorar múltiples caminos en cada paso. Cada celda libre puede tener hasta 4 opciones de movimiento: arriba, derecha, abajo e izquierda. Esto crea un árbol de decisión donde cada nivel tiene potencialmente 4 ramas.
 
@@ -65,7 +65,7 @@ Matemáticamente, un laberinto 5x5 con 25 celdas podría generar hasta 100 explo
 
 ---
 
-### 3. ¿Cómo influye el orden de busqueda?
+### 3. ¿Cómo influye el orden de búsqueda?
 
 El orden de exploración afecta significativamente el rendimiento. Con el orden ORIGINAL (arriba-derecha-abajo-izquierda), el algoritmo busca primero hacia arriba lo que causa muchos retrocesos iniciales. Esto es típicamente lento en laberintos con salida a la derecha o abajo.
 
@@ -97,7 +97,7 @@ Sin este control, las llamadas serían 10,000 o más infinitamente, el tiempo se
 
 ---
 
-### 6. ¿Qué pasaria si el laberinto no tiene solucion?
+### 6. ¿Qué pasaría si el laberinto no tiene solución?
 
 Si no hay solución, el algoritmo explora TODO el laberinto. Intenta cada celda posible antes de concluir que no existe camino hacia la salida. El resultado es que retorna falso después de agotar todas las opciones. El costo es máximo: las llamadas serán aproximadamente igual al número total de celdas del laberinto.
 
@@ -127,6 +127,6 @@ El algoritmo demuestra trade-offs importantes: es completo (siempre encuentra la
 
 ## Autores
 
-Benitez y Castillo
+Benítez y Castillo
 Universidad UDLA - Semestre IV
 Materia: Programación III - Laboratorio de Backtracking
